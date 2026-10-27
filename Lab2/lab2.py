@@ -1,4 +1,9 @@
 import sys
+import os
+
+os.environ["QT_QPA_PLATFORM"] = "windows:darkmode=0"
+
+
 from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox
 from PyQt6.QtGui import QAction, QActionGroup, QPainter, QMouseEvent, QPaintEvent
 from PyQt6.QtCore import Qt
